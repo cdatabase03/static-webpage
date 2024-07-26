@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>Registration form</title>
+<script type="text/javascript">
+functionvalidate()
+{
+if (document.myform.Name.value=="")
+{
+alert("please provide your name")
+document.myform.name.focus();
+returnfales;
+}
+if(document.myform.email.value==")
+{
+alter("please provide ypur emmailId");
+document.myform.email.focus();
+returnfalse;
+}
+if(document.myform.zip.value=="")||
+(document.myform.zip.value.length!=5))
+{
+alert("please provide a valid zip code formate####");
+document.myform.zip.focus();
+}
+if(document.myform.country.value=="-1")
+{
+alert("please provide tour country name");
+returnfalse;
+}
+returntryue;
+}
+funtion validate email()
+{
+varemailId=document.myform.email value;
+atpos=emailId.indexof("@");
+dotpos=emailId.lasrindexof(".")
+if(atpos<1||(dotpos atpos<2))
+{
+alert("please enter correct emailId");
+document.myform.email.focus();
+returnfalse;
+}
+returntrue;
+}
+</script>
+</head>
+<body>
+<form name="myform"unsubmit="return(validate());">
+<table cellspacing="2"cellspacing="2"border=="1">
+<tr>
+<td>name</td>
+<td><input type="text"name="name"/></td>
+</tr>
+<tr>
+<td>emailId</td>
+<td><input type="text"name="email"onechange="validate email();"/></td>
+</tr>
+<tr>
+<td>zip code</td>
+<td><input type="text"name="zip"/></td>
+</tr>
+<tr>
+<td>country</td>
+<td><select name="country">
+<option value="-1"selected>[choose yours]<\option>
+<option value="1">INDIA<\option>
+<option value="2">USA<\option>
+<option value="3">Srilanka<\option>
+</select>
+</td>
+</tr>
+<tr>
+<td colspan="2"align="center"><input type ="submit"value="submit"/></td>
+</tr>
+</table>
+</body>
+</html>
+
+</tr>
+<tr>
